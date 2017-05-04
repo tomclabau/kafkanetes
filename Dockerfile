@@ -8,7 +8,7 @@ RUN mkdir -p /opt/kafka \
   && echo '!!!!!!!!!yum install java completed' \
   && curl -s http://www.mirrorservice.org/sites/ftp.apache.org/kafka/0.9.0.1/kafka_2.11-0.9.0.1.tgz | tar -xz --strip-components=1 \
   && echo '!!!!!!!!!CURL completed' \
-  && yum -y remove tar \
+  && echo '!!!!!!!!! removed command: yum -y remove tar' \
   && echo '!!!!!!!!!YUM remove completed' \
   && yum clean all \
   && echo '!!!!!!!!!YUM clean all completed' \
