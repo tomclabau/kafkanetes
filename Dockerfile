@@ -1,4 +1,4 @@
-FROM rhel
+FROM centos
 RUN mkdir -p /opt/kafka \
   && cd /opt/kafka \
   && ln -s /var/run/secrets/rhel7.repo /etc/yum.repos.d/rhel7.repo \
